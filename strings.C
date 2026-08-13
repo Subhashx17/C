@@ -1,11 +1,20 @@
 #include <stdio.h>
 
+void printstr(char arr[]);
+int countlength(char arr[]);
 
 int main(){
-    char name[50];
-    printf("enter your first name : ");
-    scanf("%s",name);
-    printf("Your First name is : %s", name);
+    char name[100];
+    fgets(name, 100 , stdin);
+    printf("The length of the string is : %d",countlength(name));
     return 0;
 }
 
+
+int countlength(char arr[]){
+    int count=0;
+    for(int i=0; arr[i]!='\0'; i++){
+        count++;
+    }
+    return count-1;
+}
