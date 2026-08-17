@@ -21,17 +21,10 @@ int main(){
 
     int x;
     int y;
-    x = v1[0].x1 - v1[1].x2;
-    y = v1[0].y1 - v1[1].y2;
+    x = v1[0].x1 + v1[1].x2;
+    y = v1[0].y1 + v1[1].y2;
 
-    int resultantsqr;
-    resultantsqr = (x*x)+(y*y);
-
-    float res;
-    res = sqrt(resultantsqr);
-
-    printf("resultant vector's magnitude is : %f", res);
-
+    printf("The added vector is : %di + %dj", x,y);
 
     return 0;
 }
