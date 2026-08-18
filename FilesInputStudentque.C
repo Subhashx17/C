@@ -2,7 +2,7 @@
 
 int main(){
     FILE *fhie;
-    fhie = fopen(".txt","w");
+    fhie = fopen("filesinputstudentque.txt","w");
     char ch[100];
     int age;
     float cgpa;
