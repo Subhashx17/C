@@ -2,7 +2,7 @@
 
 int main(){
     FILE *fhie;
-    fhie = fopen("integersque.txt","w");
+    fhie = fopen("integersque.txt","r");
 
     int a;
     fscanf(fhie, "%d", &a);
